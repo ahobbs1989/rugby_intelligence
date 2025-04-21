@@ -1,7 +1,7 @@
 # Rugby Intelligence Data Pipeline
 
-This project is a data pipeline for processing rugby match data. It extracts, transforms, and analyzes data from raw sources to generate insights about rugby matches, teams, and statistics. 
-The pipeline is divided into multiple stages: `Web to Raw`, `Raw to Bronze`, `Bronze to Silver`, and `Data Quality`.
+This project is a data pipeline for processing international rugby match data. It extracts, transforms, and analyzes data from raw website sources to generate insights about rugby matches, teams, and statistics. 
+The pipeline is divided into multiple stages: Web to Raw, Raw to Bronze, Bronze to Silver, Data Analysis and Data Quality.
 
 ------------------------------------------------------------------------------
 
@@ -9,26 +9,42 @@ The pipeline is divided into multiple stages: `Web to Raw`, `Raw to Bronze`, `Br
 
 The project is organized as follows:
 
+
+
 ricode/ 
+
+
       ├── web_to_raw/ 
             ├── international_game_scrape.py
             ├── international_game_stats_scrape.py
             ├── international_game_team_scrap.py
             ├── orchestrator.py
+
+            
       ├── raw_to_bronze/
             ├── rtb_game.py 
             ├── rtb_game_stat.py 
             ├── rtb_team.py         
+
+            
       ├── bronze_to_silver/ 
             ├── bts_game.py 
             ├── bts_game_stat.py 
+
+            
       ├── data_quality/  
             ├── dq_raw_to_bronze.py
             ├── dq_bronze_to_silver.py
+
+            
       ├── data_analysis/  
             ├── game_stat_analysis_demo.ipynb
+
+            
       ├── utils/ 
             ├── file_utils.py
+
+            
        ├── test/ 
            ├── test_file_utils.py
 
